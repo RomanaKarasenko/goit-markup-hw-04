@@ -480,9 +480,14 @@ width: calc((100% - 72px) / 4);
 .footcont {
     margin: 0 auto; 
     padding: 0 20px; 
-    display: block;
+    display: flex;
+    align-items: baseline;
+
 }
 
+.footerlogocontainer{
+    margin-right: 120px;
+}
 .logofooter {
     margin-bottom: 16px;
     display: inline-block;
@@ -491,4 +496,32 @@ width: calc((100% - 72px) / 4);
 
 .footertext {
     max-width: 264px;
+}
+.socmedia{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#FFFFFF;
+    margin-bottom: 16px;
+
+
+}
+.footerul{
+    display: flex;
+    gap: 16px;
+}
+.footerli{
+    width: 40px;
+    height: 40px; 
+
+}
+.footerlink{
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border: radius 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
