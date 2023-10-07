@@ -412,9 +412,7 @@ width: calc((100% - 72px) / 4);
 .fourul {
     list-style-type: none;
 }
-.fourul:hover{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 
 .fourul{
     display: flex;
@@ -424,6 +422,13 @@ width: calc((100% - 72px) / 4);
 }
 .fourli {
     width: calc((100% - 48px) / 3); 
+    min-height: 100px;
+    padding: 20px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fourli:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .fourimage {
     width:100%;
@@ -433,6 +438,7 @@ width: calc((100% - 72px) / 4);
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    
 }
 .fourparagraph {
     font-weight: 500;
@@ -464,6 +470,7 @@ width: calc((100% - 72px) / 4);
     padding: 0 20px;
     display: flex;
     align-items: baseline;
+  
   }
   
   .footerlogocontainer {
