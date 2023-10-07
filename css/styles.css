@@ -509,6 +509,9 @@ width: calc((100% - 72px) / 4);
     color: #ffffff;
     margin-bottom: 16px;
   }
+  .social-media-icon{
+    fill: #fff;
+  }
   
   .footerul {
     display: flex;
