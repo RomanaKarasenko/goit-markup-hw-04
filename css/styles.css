@@ -296,7 +296,7 @@ width: calc((100% - 72px) / 4);
 }
 
 
-.container.three {
+.three {
     flex-direction: column;
 }
 
@@ -379,12 +379,12 @@ width: calc((100% - 72px) / 4);
 
 }
 
-.iconslink :hover{
+.iconslink:hover {
     background-color: #404bbf;
 }
 
-.iconslink :focus{
-    background-color: #404bbf; 
+.iconslink:focus {
+    background-color: #404bbf;
 }
 /*Section four*/
 
@@ -449,17 +449,23 @@ width: calc((100% - 72px) / 4);
 
 /*Footer*/
 
-.footer{
+.footer {
     background-color: #2e2f42;
-}
-.footertext{
-    line-height: 1.5;
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
-    max-width:264px;
-}
-
-.logofooter{
+    padding: 100px 0;
+  }
+  
+  .footcont {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footerlogocontainer {
+    margin-right: 120px;
+  }
+  
+  .logofooter {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -467,61 +473,53 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-}
-
-.logofooter span{
-    color: #f4f4fd;
-}
-
-.footer {
-    padding: 100px 0;
-}
-
-.footcont {
-    margin: 0 auto; 
-    padding: 0 20px; 
-    display: flex;
-    align-items: baseline;
-
-}
-
-.footerlogocontainer{
-    margin-right: 120px;
-}
-.logofooter {
     margin-bottom: 16px;
     display: inline-block;
-    text-decoration:none;
-}
-
-.footertext {
+    text-decoration: none;
+  }
+  
+  .logofooter span {
+    color: #f4f4fd;
+  }
+  
+  .footertext {
     max-width: 264px;
-}
-.socmedia{
+    line-height: 1.5;
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
+  }
+  
+  .socmedia {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:#FFFFFF;
+    color: #ffffff;
     margin-bottom: 16px;
-
-
-}
-.footerul{
+  }
+  
+  .footerul {
     display: flex;
     gap: 16px;
-}
-.footerli{
+  }
+  
+  .footerli {
     width: 40px;
-    height: 40px; 
-
-}
-.footerlink{
+    height: 40px;
+  }
+  
+  .footerlink {
     width: 100%;
     height: 100%;
-    background-color:#4d5ae5;
-    border: radius 50%;
+    background-color: #4d5ae5;
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+  .footerlink:hover,
+  .footerlink:focus {
+    background-color: #31d0aa;
+  }
